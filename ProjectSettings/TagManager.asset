@@ -3,12 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - ground
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - ground
   - Water
   - UI
   - 
@@ -25,6 +26,7 @@ TagManager:
   - 
   - 
   - 
+  - Player/enemie
   - 
   - 
   - 
@@ -34,10 +36,15 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
+  - Platform
   - 
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: platforms
+    uniqueID: 2971303675
+    locked: 0
+  - name: player/enemie
+    uniqueID: 2703238609
     locked: 0
