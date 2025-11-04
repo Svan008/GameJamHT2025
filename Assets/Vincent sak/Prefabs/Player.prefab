@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 855004078150721491}
   - component: {fileID: 855004078150721490}
   - component: {fileID: 855004078150721502}
+  - component: {fileID: 3768475033762578749}
   - component: {fileID: 855004078150721503}
   m_Layer: 0
   m_Name: Player
@@ -194,6 +195,29 @@ MonoBehaviour:
   dashingTime: 1
   dashingCooldown: 1
   tr: {fileID: 0}
+--- !u!114 &3768475033762578749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 855004078150721493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73a524790c5708b45b1ba434a1c15bc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 0
+  shootingCooldown: 2
+  spread: 1
+  shootingForce: 5
+  isAutomatic: 0
+  firePoint: {fileID: 2768989868750678561}
+  bulletPrefab: {fileID: 2682767753806434063, guid: cf0ad86879a551e4ea142b3460f1b725, type: 3}
+  whatIsEnemy:
+    serializedVersion: 2
+    m_Bits: 0
+  amountOfSpread: 3
 --- !u!70 &855004078150721503
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

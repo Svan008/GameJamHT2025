@@ -1,9 +1,10 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using Unity.Mathematics;
 using UnityEngine;
-using Random = System.Random;
+using Random = UnityEngine.Random;
 
 public class Spells : MonoBehaviour
 {
@@ -33,11 +34,11 @@ public class Spells : MonoBehaviour
     {
         if (isAutomatic)
         {
-            shooting = Input.GetKey(KeyCode.O);
+            shooting = Input.GetKey(KeyCode.L);
         }
         else
         {
-            shooting = Input.GetKeyDown(KeyCode.O); 
+            shooting = Input.GetKeyDown(KeyCode.L); 
         }
 
         if(canShoot && shooting)
