@@ -51,6 +51,14 @@ public class Spells : MonoBehaviour
         canShoot = false;
 
         //Spread
-        amountOfSpread = Random.range(-spread, spread);
+        //amountOfSpread = Random.Range(-spread, spread);
+
+        quaternion rotAfterSpread = Quaternion.Euler(firePoint.position.x,
+            firePoint.position.y,
+            firePoint.position.z + amountOfSpread);
+
+
+        //Spawna bullet
+        GameObject bulletCopy = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
     }
 }
