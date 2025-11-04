@@ -1,6 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
+using Random = System.Random;
 
 public class Spells : MonoBehaviour
 {
@@ -24,5 +27,30 @@ public class Spells : MonoBehaviour
     private void Start()
     {
         canShoot = true;
+    }
+
+    private void Update()
+    {
+        if (isAutomatic)
+        {
+            shooting = Input.GetKey(KeyCode.O);
+        }
+        else
+        {
+            shooting = Input.GetKeyDown(KeyCode.O); 
+        }
+
+        if(canShoot && shooting)
+        {
+            Shoot();
+        }
+    }
+
+    private void Shoot()
+    {
+        canShoot = false;
+
+        //Spread
+        amountOfSpread = Random.range(-spread, spread);
     }
 }
