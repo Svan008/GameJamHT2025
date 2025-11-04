@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Exitbutton1 : MonoBehaviour
 {
- 
     void Update()
     {
         if (Input.GetKey("escape"))
