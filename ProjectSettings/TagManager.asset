@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - ground
+  - Movement
+  - Menu Panel
   layers:
   - Default
   - TransparentFX
@@ -26,6 +28,7 @@ TagManager:
   - 
   - 
   - 
+  - Player/enemie
   - 
   - 
   - 
@@ -35,10 +38,15 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
+  - Platform
   - 
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: platforms
+    uniqueID: 2971303675
+    locked: 0
+  - name: player/enemie
+    uniqueID: 2703238609
     locked: 0
