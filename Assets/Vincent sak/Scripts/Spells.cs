@@ -51,7 +51,7 @@ public class Spells : MonoBehaviour
         canShoot = false;
 
         //Spread
-        //amountOfSpread = Random.Range(-spread, spread);
+        amountOfSpread = Random.Range(-spread, spread);
 
         quaternion rotAfterSpread = Quaternion.Euler(firePoint.position.x,
             firePoint.position.y,
@@ -60,5 +60,14 @@ public class Spells : MonoBehaviour
 
         //Spawna bullet
         GameObject bulletCopy = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
+        firePoint.rotation = rotAfterSpread;
+        bulletCopy.GetComponent<Rigidbody2D>().AddForce(firePoint.up * shootingForce, ForceMode2D.Impulse);
+
+        Invoke("ResetShot", shootingCooldown);
+    }
+
+    private void ResetShot()
+    {
+        canShoot = true;
     }
 }
