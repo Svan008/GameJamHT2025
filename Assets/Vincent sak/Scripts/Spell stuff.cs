@@ -1,18 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Spellstuff : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    //spell stats
+    public int Damage;
+    public float shootingCooldown, spread, range, timeBetweenShots;
+    public int bulletsPerTap;
+    public bool allowButtonHold;
+    int bulletsShot;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    //bools
 }
