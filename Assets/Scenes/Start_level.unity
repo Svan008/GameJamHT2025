@@ -4066,5 +4066,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 855004078150721502, guid: 0941d20faa29c234f8dc51e87afa6e7c, type: 3}
+      propertyPath: jumpForce
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 855004078150721502, guid: 0941d20faa29c234f8dc51e87afa6e7c, type: 3}
+      propertyPath: dashingTime
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 855004078150721502, guid: 0941d20faa29c234f8dc51e87afa6e7c, type: 3}
+      propertyPath: dashingCooldown
+      value: 0.14
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0941d20faa29c234f8dc51e87afa6e7c, type: 3}
