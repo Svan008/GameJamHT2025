@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 855004078150721502}
   - component: {fileID: 3768475033762578749}
   - component: {fileID: 855004078150721503}
+  - component: {fileID: 120070936}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -133,7 +134,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0.1
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
@@ -178,8 +179,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a981c052d8fd3142b9cb4823b96940e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
-  jumpForce: 5
+  moveSpeed: 2.5
+  jumpForce: 8
   groundCheck: {fileID: 855004077824679483}
   groundCheckRadius: 0.2
   groundLayer:
@@ -194,7 +195,9 @@ MonoBehaviour:
   dashingPower: 12
   dashingTime: 1
   dashingCooldown: 1
-  tr: {fileID: 0}
+  anim: {fileID: 120070936}
+  bulletPrefab: {fileID: 6916170278612413693, guid: 6c89c6343c5f63449acf1f73b6d8bfaf, type: 3}
+  firePoint: {fileID: 2768989868750678561}
 --- !u!114 &3768475033762578749
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -217,7 +220,8 @@ MonoBehaviour:
   whatIsEnemy:
     serializedVersion: 2
     m_Bits: 0
-  amountOfSpread: 3
+  facingRight: 1
+  facingLeft: 0
 --- !u!70 &855004078150721503
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -234,6 +238,25 @@ CapsuleCollider2D:
   m_Offset: {x: 0.01935649, y: -0.05806935}
   m_Size: {x: 0.50481844, y: 1.0232015}
   m_Direction: 0
+--- !u!95 &120070936
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 855004078150721493}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2452b714392e4b74ba817df55b965af0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2077562866681557073
 GameObject:
   m_ObjectHideFlags: 0
@@ -257,8 +280,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2077562866681557073}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.011, y: -0.011, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.07, y: -0.011000007, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6390953045327280593}
@@ -287,7 +310,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6267229533374447793}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.385, y: -0.238, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:

@@ -20,6 +20,9 @@ public class Spells : MonoBehaviour
     [SerializeField] GameObject bulletPrefab;
     [SerializeField] LayerMask whatIsEnemy;
 
+    [SerializeField] bool facingRight = true;
+    [SerializeField] bool facingLeft;
+
     private float amountOfSpread;
 
     private bool shooting;
@@ -45,6 +48,12 @@ public class Spells : MonoBehaviour
         {
             Shoot();
         }
+
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            Instantiate(bulletPrefab, firePoint.position, transform.rotation);
+        }
+
     }
 
     private void Shoot()
@@ -62,8 +71,7 @@ public class Spells : MonoBehaviour
         //Spawna bullet
         GameObject bulletCopy = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
         firePoint.rotation = rotAfterSpread;
-        bulletCopy.GetComponent<Rigidbody2D>().AddForce(firePoint.up * shootingForce, ForceMode2D.Impulse);
-
+        
         Invoke("ResetShot", shootingCooldown);
     }
 
