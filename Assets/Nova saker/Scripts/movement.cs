@@ -25,7 +25,7 @@ public class movement : MonoBehaviour
     [SerializeField, Range(0,4)] private float dashingCooldown = 1f; // Cooldown between dashes
 
     private bool isFacingRight = true; // Kolla vilket håll karaktären tittar i
-    [SerializeField] private TrailRenderer tr; // Trail renderer for dash effect
+    
 
 
     // Start is called before the first frame update
