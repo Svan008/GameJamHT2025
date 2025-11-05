@@ -196,6 +196,8 @@ MonoBehaviour:
   dashingTime: 1
   dashingCooldown: 1
   anim: {fileID: 120070936}
+  bulletPrefab: {fileID: 6916170278612413693, guid: 6c89c6343c5f63449acf1f73b6d8bfaf, type: 3}
+  firePoint: {fileID: 2768989868750678561}
 --- !u!114 &3768475033762578749
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -279,7 +281,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2077562866681557073}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.011000037, y: -0.011000007, z: 0}
+  m_LocalPosition: {x: 0.07, y: -0.011000007, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6390953045327280593}

@@ -28,6 +28,7 @@ public class movement : MonoBehaviour
     
 
     private bool isFacingRight = true; // Kolla vilket håll karaktären tittar i
+
     
 
 
@@ -90,6 +91,7 @@ public class movement : MonoBehaviour
         {
 
         }
+        
     }
     private void Move(float direction)
     {

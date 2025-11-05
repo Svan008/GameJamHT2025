@@ -48,6 +48,12 @@ public class Spells : MonoBehaviour
         {
             Shoot();
         }
+
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            Instantiate(bulletPrefab, firePoint.position, transform.rotation);
+        }
+
     }
 
     private void Shoot()
@@ -65,29 +71,7 @@ public class Spells : MonoBehaviour
         //Spawna bullet
         GameObject bulletCopy = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
         firePoint.rotation = rotAfterSpread;
-
-        if (Input.GetKey(KeyCode.D))
-        {
-            facingRight = true;
-        }
-       
-        if (Input.GetKey(KeyCode.A))
-        {
-            facingLeft = true;
-        }
         
-
-
-        if (facingLeft)
-        {
-            bulletCopy.GetComponent<Rigidbody2D>().AddForce(firePoint.right * shootingForce, ForceMode2D.Impulse);
-        }
-
-        if (facingRight)
-        {
-            bulletCopy.GetComponent<Rigidbody2D>().AddForce(-firePoint.right * shootingForce, ForceMode2D.Impulse);
-        }
-
         Invoke("ResetShot", shootingCooldown);
     }
 
