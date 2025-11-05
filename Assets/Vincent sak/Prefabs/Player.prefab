@@ -194,7 +194,6 @@ MonoBehaviour:
   dashingPower: 12
   dashingTime: 1
   dashingCooldown: 1
-  tr: {fileID: 0}
 --- !u!114 &3768475033762578749
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -217,6 +216,8 @@ MonoBehaviour:
   whatIsEnemy:
     serializedVersion: 2
     m_Bits: 0
+  facingRight: 0
+  facingLeft: 0
 --- !u!70 &855004078150721503
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -257,7 +258,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2077562866681557073}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.011000037, y: -0.011000007, z: 0}
+  m_LocalPosition: {x: 0.137, y: -0.011000007, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6390953045327280593}
