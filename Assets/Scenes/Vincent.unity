@@ -554,6 +554,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6916170278612413694, guid: 6c89c6343c5f63449acf1f73b6d8bfaf, type: 3}
     - target: {fileID: 3768475033762578749, guid: 0941d20faa29c234f8dc51e87afa6e7c, type: 3}
+      propertyPath: bulletPrefab2
+      value: 
+      objectReference: {fileID: 2682767753806434063, guid: cf0ad86879a551e4ea142b3460f1b725, type: 3}
+    - target: {fileID: 3768475033762578749, guid: 0941d20faa29c234f8dc51e87afa6e7c, type: 3}
       propertyPath: whatIsEnemy.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}

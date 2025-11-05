@@ -18,6 +18,7 @@ public class Spells : MonoBehaviour
 
     [SerializeField] Transform firePoint;
     [SerializeField] GameObject bulletPrefab;
+    [SerializeField] GameObject bulletPrefab2;
     [SerializeField] LayerMask whatIsEnemy;
 
     [SerializeField] bool facingRight = true;
@@ -35,25 +36,32 @@ public class Spells : MonoBehaviour
 
     private void Update()
     {
+        //kollar om attacken är automatisk, om det är skjuter den med att hålla in knappen
         if (isAutomatic)
         {
             shooting = Input.GetKey(KeyCode.L);
         }
+        //om vapnet inte är automatiskt behöver man klicka för att skjuta
         else
         {
             shooting = Input.GetKeyDown(KeyCode.L); 
         }
 
+        
         if(canShoot && shooting)
         {
             Shoot();
         }
 
+        //klickar på L eller O för att skjuta
         if (Input.GetKeyDown(KeyCode.L))
         {
             Instantiate(bulletPrefab, firePoint.position, transform.rotation);
         }
-
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            Instantiate(bulletPrefab2, firePoint.position, transform.rotation);
+        }
     }
 
     private void Shoot()
