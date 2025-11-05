@@ -24,6 +24,9 @@ public class movement : MonoBehaviour
     [SerializeField, Range(0,4)] private float dashingTime = 1f; // Dash duration
     [SerializeField, Range(0,4)] private float dashingCooldown = 1f; // Cooldown between dashes
 
+    public Animator anim;
+    
+
     private bool isFacingRight = true; // Kolla vilket håll karaktären tittar i
     
 
@@ -31,14 +34,19 @@ public class movement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>(); // Hämta vår Rigidbody 2D
         extraJump = extraJumpValue; // de är samma 
+       
 
     }
 
     // Update is called once per frame
     void Update()
     {
+
+        
+
 
         // Adjust speed if Left Shift is held for sprinting
         IsGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer); // Kolla om spelaren är på marken
@@ -63,17 +71,11 @@ public class movement : MonoBehaviour
         }
 
 
-        if (Input.GetKey(left))
-        {
-            transform.position += new Vector3(-1, 0, 0) * moveSpeed * Time.deltaTime;//rör dig vänster
-        }
-        if (Input.GetKey(right))
-        {
-            transform.position += new Vector3(1, 0, 0) * moveSpeed * Time.deltaTime;//rör dig höger
-
-        }
-
         float moveDirection = Input.GetAxis("Horizontal");  // Kolla om vi rör oss horisontellt
+        anim.SetBool("Jump", !IsGrounded);
+
+       
+        Move(moveDirection); // Flytta spelaren
         if (moveDirection > 0 && !isFacingRight)
         {
             Flip();
@@ -96,6 +98,10 @@ public class movement : MonoBehaviour
         // Calculate movement and apply it to Rigidbody2D
         Vector2 movement = new Vector2(direction * moveSpeed, rb.velocity.y);
         rb.velocity = movement;
+
+        float absoluteSpeed = Mathf.Abs(direction * moveSpeed);
+        anim.SetFloat("Speed", absoluteSpeed);
+
 
     }
 
