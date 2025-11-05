@@ -215,6 +215,7 @@ GameObject:
   m_Component:
   - component: {fileID: 84776395}
   - component: {fileID: 84776396}
+  - component: {fileID: 84776397}
   m_Layer: 0
   m_Name: Skog_1
   m_TagString: Untagged
@@ -230,15 +231,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 84776394}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.6915989, y: -0.05000004, z: 1}
-  m_LocalScale: {x: 0.4, y: 0.39999998, z: 1}
+  m_LocalPosition: {x: -1.6915989, y: 0.35, z: 1}
+  m_LocalScale: {x: 0.4, y: 0.59803796, z: 1}
   m_Children:
   - {fileID: 54554567}
   - {fileID: 1758864281}
   - {fileID: 235691908}
   - {fileID: 1854721389}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &84776396
 SpriteRenderer:
@@ -291,6 +292,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &84776397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 84776394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f9be9679d963b1498d4d722a5d2f5a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 519420028}
+  parallaxEffect: 0
 --- !u!1 &94703171
 GameObject:
   m_ObjectHideFlags: 0
@@ -301,6 +316,7 @@ GameObject:
   m_Component:
   - component: {fileID: 94703172}
   - component: {fileID: 94703173}
+  - component: {fileID: 94703174}
   m_Layer: 0
   m_Name: Skog_2
   m_TagString: Untagged
@@ -316,15 +332,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 94703171}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.6915989, y: -0.05000004, z: 2.5}
-  m_LocalScale: {x: 0.4, y: 0.39999998, z: 1}
+  m_LocalPosition: {x: -1.6915989, y: 0.35, z: 2}
+  m_LocalScale: {x: 0.4, y: 0.59803796, z: 1}
   m_Children:
   - {fileID: 1069549728}
   - {fileID: 1284339892}
   - {fileID: 206113561}
   - {fileID: 2036709983}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &94703173
 SpriteRenderer:
@@ -377,6 +393,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &94703174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 94703171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f9be9679d963b1498d4d722a5d2f5a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 519420028}
+  parallaxEffect: 0.05
 --- !u!1 &206113560
 GameObject:
   m_ObjectHideFlags: 0
@@ -551,6 +581,7 @@ GameObject:
   m_Component:
   - component: {fileID: 302784241}
   - component: {fileID: 302784242}
+  - component: {fileID: 302784243}
   m_Layer: 0
   m_Name: Skog_4
   m_TagString: Untagged
@@ -566,15 +597,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 302784240}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.6915989, y: -0.05000004, z: 10}
-  m_LocalScale: {x: 0.4, y: 0.39999998, z: 1}
+  m_LocalPosition: {x: -1.6915989, y: 0.35, z: 4}
+  m_LocalScale: {x: 0.4, y: 0.59803796, z: 1}
   m_Children:
   - {fileID: 1837040255}
   - {fileID: 501950359}
   - {fileID: 920400268}
   - {fileID: 1873367589}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &302784242
 SpriteRenderer:
@@ -627,6 +658,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &302784243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302784240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f9be9679d963b1498d4d722a5d2f5a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 519420028}
+  parallaxEffect: 0.15
 --- !u!1 &501818800
 GameObject:
   m_ObjectHideFlags: 0
@@ -656,7 +701,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 719162756}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &501818802
 SpriteRenderer:
@@ -719,6 +764,7 @@ GameObject:
   m_Component:
   - component: {fileID: 501950359}
   - component: {fileID: 501950360}
+  - component: {fileID: 501950361}
   m_Layer: 0
   m_Name: Skog_4 (1)
   m_TagString: Untagged
@@ -791,6 +837,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &501950361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 501950358}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f9be9679d963b1498d4d722a5d2f5a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 519420028}
+  parallaxEffect: 0
 --- !u!1 &502741724
 GameObject:
   m_ObjectHideFlags: 0
@@ -801,6 +861,7 @@ GameObject:
   m_Component:
   - component: {fileID: 502741725}
   - component: {fileID: 502741726}
+  - component: {fileID: 502741727}
   m_Layer: 0
   m_Name: Skog_5 (2)
   m_TagString: Untagged
@@ -873,6 +934,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &502741727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 502741724}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f9be9679d963b1498d4d722a5d2f5a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 519420028}
+  parallaxEffect: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -884,6 +959,7 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
+  - component: {fileID: 519420030}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -899,6 +975,19 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
+--- !u!114 &519420030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 225191c693515d945a752db1c2bc8e5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1302247759}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -909,7 +998,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.93725497, g: 0.9686275, b: 0.7843138, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -949,12 +1038,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.15, y: -0.11, z: -10}
+  m_LocalRotation: {x: 0, y: 1e-45, z: 0, w: 1}
+  m_LocalPosition: {x: 9.82, y: -0.4, z: -10}
   m_LocalScale: {x: 1.21821, y: 1.479139, z: 1.1602}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &579579773
 GameObject:
@@ -966,6 +1055,7 @@ GameObject:
   m_Component:
   - component: {fileID: 579579774}
   - component: {fileID: 579579775}
+  - component: {fileID: 579579776}
   m_Layer: 0
   m_Name: Skog_5 (1)
   m_TagString: Untagged
@@ -1038,6 +1128,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &579579776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579579773}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f9be9679d963b1498d4d722a5d2f5a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 519420028}
+  parallaxEffect: 0
 --- !u!1 &719162755
 GameObject:
   m_ObjectHideFlags: 0
@@ -1048,6 +1152,7 @@ GameObject:
   m_Component:
   - component: {fileID: 719162756}
   - component: {fileID: 719162757}
+  - component: {fileID: 719162758}
   m_Layer: 0
   m_Name: Skog_3
   m_TagString: Untagged
@@ -1063,15 +1168,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 719162755}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.6915989, y: -0.05000004, z: 5}
-  m_LocalScale: {x: 0.4, y: 0.39999998, z: 1}
+  m_LocalPosition: {x: -1.6915989, y: 0.35, z: 3}
+  m_LocalScale: {x: 0.4, y: 0.59803796, z: 1}
   m_Children:
-  - {fileID: 1372458162}
   - {fileID: 904055818}
   - {fileID: 1874276619}
   - {fileID: 501818801}
+  - {fileID: 1372458162}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &719162757
 SpriteRenderer:
@@ -1124,6 +1229,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &719162758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 719162755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f9be9679d963b1498d4d722a5d2f5a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 519420028}
+  parallaxEffect: 0.1
 --- !u!1 &759742395
 GameObject:
   m_ObjectHideFlags: 0
@@ -1134,6 +1253,7 @@ GameObject:
   m_Component:
   - component: {fileID: 759742397}
   - component: {fileID: 759742396}
+  - component: {fileID: 759742398}
   m_Layer: 0
   m_Name: Skog_5
   m_TagString: Untagged
@@ -1200,16 +1320,30 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 759742395}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.6915989, y: -0.05000004, z: 15}
-  m_LocalScale: {x: 0.4, y: 0.39999998, z: 1}
+  m_LocalPosition: {x: -1.6915989, y: 0.35, z: 5}
+  m_LocalScale: {x: 0.4, y: 0.59803796, z: 1}
   m_Children:
   - {fileID: 2067158089}
   - {fileID: 502741725}
   - {fileID: 579579774}
   - {fileID: 2081433080}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &759742398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 759742395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f9be9679d963b1498d4d722a5d2f5a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 519420028}
+  parallaxEffect: 0.2
 --- !u!1 &904055817
 GameObject:
   m_ObjectHideFlags: 0
@@ -1239,7 +1373,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 719162756}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &904055819
 SpriteRenderer:
@@ -1302,6 +1436,7 @@ GameObject:
   m_Component:
   - component: {fileID: 920400268}
   - component: {fileID: 920400269}
+  - component: {fileID: 920400270}
   m_Layer: 0
   m_Name: Skog_4 (1)
   m_TagString: Untagged
@@ -1374,6 +1509,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &920400270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920400267}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f9be9679d963b1498d4d722a5d2f5a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 519420028}
+  parallaxEffect: 0
 --- !u!1 &1069549727
 GameObject:
   m_ObjectHideFlags: 0
@@ -1533,11 +1682,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1123922289}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.7, y: -0.5074, z: 20}
+  m_LocalPosition: {x: 12.7, y: -0.5074, z: 6}
   m_LocalScale: {x: 2, y: 0.63624245, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1123922292
 MonoBehaviour:
@@ -1546,13 +1695,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1123922289}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8f9be9679d963b1498d4d722a5d2f5a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 0}
-  parallaxeffect: 0
+  cam: {fileID: 519420028}
+  parallaxEffect: 0.0005
 --- !u!1 &1199507201
 GameObject:
   m_ObjectHideFlags: 0
@@ -1595,7 +1744,7 @@ Transform:
   m_Children:
   - {fileID: 1844370938}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1241714237
 GameObject:
@@ -2806,6 +2955,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!4 &1302247759 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 855004078150721489, guid: 0941d20faa29c234f8dc51e87afa6e7c, type: 3}
+  m_PrefabInstance: {fileID: 855004078447153478}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1372458161
 GameObject:
   m_ObjectHideFlags: 0
@@ -2835,7 +2989,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 719162756}
-  m_RootOrder: 0
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1372458163
 SpriteRenderer:
@@ -2930,7 +3084,7 @@ Transform:
   m_Children:
   - {fileID: 1241714238}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1758864280
 GameObject:
@@ -3024,6 +3178,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1837040255}
   - component: {fileID: 1837040256}
+  - component: {fileID: 1837040257}
   m_Layer: 0
   m_Name: Skog_4 (1)
   m_TagString: Untagged
@@ -3096,6 +3251,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1837040257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1837040254}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f9be9679d963b1498d4d722a5d2f5a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 519420028}
+  parallaxEffect: 0
 --- !u!1 &1844370937
 GameObject:
   m_ObjectHideFlags: 0
@@ -3306,6 +3475,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1873367589}
   - component: {fileID: 1873367590}
+  - component: {fileID: 1873367591}
   m_Layer: 0
   m_Name: Skog_4 (2)
   m_TagString: Untagged
@@ -3378,6 +3548,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1873367591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873367588}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f9be9679d963b1498d4d722a5d2f5a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 519420028}
+  parallaxEffect: 0
 --- !u!1 &1874276618
 GameObject:
   m_ObjectHideFlags: 0
@@ -3407,7 +3591,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 719162756}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1874276620
 SpriteRenderer:
@@ -3552,6 +3736,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2067158089}
   - component: {fileID: 2067158090}
+  - component: {fileID: 2067158091}
   m_Layer: 0
   m_Name: Skog_5 (1)
   m_TagString: Untagged
@@ -3624,6 +3809,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2067158091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2067158088}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f9be9679d963b1498d4d722a5d2f5a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 519420028}
+  parallaxEffect: 0
 --- !u!1 &2081433079
 GameObject:
   m_ObjectHideFlags: 0
@@ -3634,6 +3833,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2081433080}
   - component: {fileID: 2081433081}
+  - component: {fileID: 2081433082}
   m_Layer: 0
   m_Name: Skog_5 (1)
   m_TagString: Untagged
@@ -3706,6 +3906,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2081433082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2081433079}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f9be9679d963b1498d4d722a5d2f5a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 519420028}
+  parallaxEffect: 0
 --- !u!1001 &855004078447153478
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3715,7 +3929,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 855004078150721489, guid: 0941d20faa29c234f8dc51e87afa6e7c, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 855004078150721489, guid: 0941d20faa29c234f8dc51e87afa6e7c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3757,9 +3971,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 855004078150721491, guid: 0941d20faa29c234f8dc51e87afa6e7c, type: 3}
+      propertyPath: m_AngularDrag
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 855004078150721493, guid: 0941d20faa29c234f8dc51e87afa6e7c, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 855004078150721502, guid: 0941d20faa29c234f8dc51e87afa6e7c, type: 3}
+      propertyPath: moveSpeed
+      value: 2.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0941d20faa29c234f8dc51e87afa6e7c, type: 3}
