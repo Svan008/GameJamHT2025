@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Spellstuff : MonoBehaviour
 {
-    //spell stats
+    //spell stats Vincent
     public int Damage;
     public float shootingCooldown, spread, range, timeBetweenShots;
     public int bulletsPerTap;

@@ -31,29 +31,30 @@ public class Spells : MonoBehaviour
 
     private void Start()
     {
+        //ändrar canShoot till true vid uppstart Vincent
         canShoot = true;
     }
 
     private void Update()
     {
-        //kollar om attacken är automatisk, om det är skjuter den med att hålla in knappen
+        //kollar om attacken är automatisk, om det är skjuter den med att hålla in knappen Vicnent
         if (isAutomatic)
         {
             shooting = Input.GetKey(KeyCode.L);
         }
-        //om vapnet inte är automatiskt behöver man klicka för att skjuta
+        //om vapnet inte är automatiskt behöver man klicka för att skjuta Vincent
         else
         {
             shooting = Input.GetKeyDown(KeyCode.L); 
         }
 
-        
+        //kollar om man kan skjuta och skjuter för att ge tillåtelse att skjuta Vicnent
         if(canShoot && shooting)
         {
             Shoot();
         }
 
-        //klickar på L eller O för att skjuta
+        //klickar på L eller O för att använda olika bullet prefabs Vincent
         if (Input.GetKeyDown(KeyCode.L))
         {
             Instantiate(bulletPrefab, firePoint.position, transform.rotation);
@@ -66,6 +67,7 @@ public class Spells : MonoBehaviour
 
     private void Shoot()
     {
+        //när man skjutit ändras canShoot till false
         canShoot = false;
 
         //Spread
@@ -76,13 +78,14 @@ public class Spells : MonoBehaviour
             firePoint.position.z + amountOfSpread);
 
 
-        //Spawna bullet
+        //Spawnar en bullet
         GameObject bulletCopy = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
         firePoint.rotation = rotAfterSpread;
         
         Invoke("ResetShot", shootingCooldown);
     }
 
+    //ändrar canShoot till true
     private void ResetShot()
     {
         canShoot = true;
