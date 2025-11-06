@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Exitbutton1 : MonoBehaviour
 {
-    void Update()
+    void Update() // När spelet startar
     {
-        if (Input.GetKey("escape"))
+        if (Input.GetKey("escape")) // om du trycker på esc knappen
         {
-            Application.Quit();
+            Application.Quit();// så går du ut ur spelet
         }
     }
 }
