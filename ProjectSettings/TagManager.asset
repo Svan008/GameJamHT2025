@@ -39,7 +39,7 @@ TagManager:
   - 
   - 
   - Platform
-  - 
+  - ParticleSystemLight
   m_SortingLayers:
   - name: Default
     uniqueID: 0
@@ -49,4 +49,7 @@ TagManager:
     locked: 0
   - name: player/enemie
     uniqueID: 2703238609
+    locked: 0
+  - name: ParticleEffectLight
+    uniqueID: 3259115941
     locked: 0
