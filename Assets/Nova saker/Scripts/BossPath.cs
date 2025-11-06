@@ -2,10 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class enemyPatrol : MonoBehaviour
+public class BossPath : MonoBehaviour
 {
     public GameObject PointA;
-    public GameObject PointB;//referar till båda punkterna i unity
+    public GameObject PointB;
+    public GameObject PointC;
+    public GameObject PointD;//referar till båda punkterna i unity
     private Rigidbody2D rb;
     private Animator anim;
     private Transform currentPoint;
@@ -28,13 +30,20 @@ public class enemyPatrol : MonoBehaviour
 
         if (currentPoint == PointB.transform)
         {
-            rb.velocity = new Vector2(speed, 0);// om punkten är punkt B gå mot punkte A
+            rb.velocity = new Vector2(speed, 0);// om punkten är punkt B gå mot punkte C
+        }
+        else if (currentPoint == PointC.transform)
+        {
+            rb.velocity = new Vector2(-speed, 0);// om punkten är punkt C gå mot punkte D
+        }
+        else if (currentPoint == PointD.transform)
+        {
+            rb.velocity = new Vector2(speed, 0);// om punkten är punkt D gå mot punkte A
         }
         else if (currentPoint == PointA.transform)
         {
             rb.velocity = new Vector2(-speed, 0);// om punkten är punkt A gå mot punkte B
         }
-        
 
         
 
@@ -44,8 +53,19 @@ public class enemyPatrol : MonoBehaviour
             flip();
             currentPoint = PointB.transform;
         }
-        
-        else if (Vector2.Distance(transform.position, currentPoint.position) < 4f && currentPoint == PointB.transform)//om enmyn har nått currentpoint och den är B ska currnet point sättas till punktA
+        else if (Vector2.Distance(transform.position, currentPoint.position) < 4f && currentPoint == PointB.transform)//om enmyn har nått currentpoint och den är A ska currnet point sättas till punktB
+        {
+            print("byt till C");
+            flip();
+            currentPoint = PointC.transform;
+        }
+        else if (Vector2.Distance(transform.position, currentPoint.position) < 4f && currentPoint == PointC.transform)//om enmyn har nått currentpoint och den är B ska currnet point sättas till punktA
+        {
+            print("byt till D");
+            flip();
+            currentPoint = PointD.transform;
+        }
+        else if (Vector2.Distance(transform.position, currentPoint.position) < 4f && currentPoint == PointD.transform)//om enmyn har nått currentpoint och den är B ska currnet point sättas till punktA
         {
             print("byt till A");
             flip();
@@ -64,6 +84,7 @@ public class enemyPatrol : MonoBehaviour
     {
         Gizmos.DrawWireSphere(PointA.transform.position, 0.5f);
         Gizmos.DrawWireSphere(PointB.transform.position, 0.5f);
+        Gizmos.DrawWireSphere(PointC.transform.position, 0.5f);
         Gizmos.DrawLine(PointA.transform.position, PointB.transform.position);
         // gör punkterna tydligare
     }
