@@ -212,12 +212,6 @@ MonoBehaviour:
   spread: 1
   shootingForce: 5
   isAutomatic: 0
-  firePoint: {fileID: 0}
-  bulletPrefab: {fileID: 2682767753806434063, guid: cf0ad86879a551e4ea142b3460f1b725, type: 3}
-  bulletPrefab2: {fileID: 0}
-  whatIsEnemy:
-    serializedVersion: 2
-    m_Bits: 0
   facingRight: 1
   facingLeft: 0
 --- !u!70 &855004078150721503
