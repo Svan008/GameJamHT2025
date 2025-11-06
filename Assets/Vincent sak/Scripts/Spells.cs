@@ -16,10 +16,10 @@ public class Spells : MonoBehaviour
 
     [SerializeField] bool isAutomatic;
 
-    [SerializeField] Transform firePoint;
-    [SerializeField] GameObject bulletPrefab;
-    [SerializeField] GameObject bulletPrefab2;
-    [SerializeField] LayerMask whatIsEnemy;
+    //[SerializeField] Transform firePoint;
+    //[SerializeField] GameObject bulletPrefab;
+    //[SerializeField] GameObject bulletPrefab2;
+    //[SerializeField] LayerMask whatIsEnemy;
 
     [SerializeField] bool facingRight = true;
     [SerializeField] bool facingLeft;
@@ -55,14 +55,14 @@ public class Spells : MonoBehaviour
         }
 
         //klickar på L eller O för att använda olika bullet prefabs Vincent
-        if (Input.GetKeyDown(KeyCode.L))
-        {
-            Instantiate(bulletPrefab, firePoint.position, transform.rotation);
-        }
-        if (Input.GetKeyDown(KeyCode.O))
-        {
-            Instantiate(bulletPrefab2, firePoint.position, transform.rotation);
-        }
+        //if (Input.GetKeyDown(KeyCode.L))
+        //{
+        //    Instantiate(bulletPrefab, firePoint.position, transform.rotation);
+        //}
+        //if (Input.GetKeyDown(KeyCode.O))
+        //{
+        //    Instantiate(bulletPrefab2, firePoint.position, transform.rotation);
+        //}
     }
 
     private void Shoot()
@@ -73,15 +73,16 @@ public class Spells : MonoBehaviour
         //Spread
         amountOfSpread = Random.Range(-spread, spread);
 
-        quaternion rotAfterSpread = Quaternion.Euler(firePoint.position.x,
-            firePoint.position.y,
-            firePoint.position.z + amountOfSpread);
+        //quaternion rotAfterSpread = Quaternion.Euler(firePoint.position.x,
+        //    firePoint.position.y,
+        //    firePoint.position.z + amountOfSpread);
 
 
         //Spawnar en bullet
-        GameObject bulletCopy = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
-        firePoint.rotation = rotAfterSpread;
+        //GameObject bulletCopy = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
+        //firePoint.rotation = rotAfterSpread;
         
+        //startar ResetShot funktionen
         Invoke("ResetShot", shootingCooldown);
     }
 

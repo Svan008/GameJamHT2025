@@ -2,6 +2,11 @@ using UnityEngine;
 
 public class FakeBullet : MonoBehaviour
 {
+
+    private void Start()
+    {
+        Destroy(gameObject, 3f);
+    }
     //get bulleten en hastighet Vincent
     public float Speed = 3;
     private void Update()

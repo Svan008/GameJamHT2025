@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1781078592685923789}
   - component: {fileID: 6286338001097570976}
   m_Layer: 0
-  m_Name: Normal_Bullet
+  m_Name: Spread shot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
