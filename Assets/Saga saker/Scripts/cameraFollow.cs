@@ -54,7 +54,7 @@ public class cameraFollow : MonoBehaviour
             );//nova
     }
 
-    private void OnDrawGizmos()
+    private void OnDrawGizmos()//nova
     {
         Gizmos.DrawSphere(new Vector3(_cameraBounds.min.x, 0, 0),1);
         Gizmos.DrawCube(new Vector3(_cameraBounds.max.x, 0, 0), Vector3.one);
