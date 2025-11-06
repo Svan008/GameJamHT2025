@@ -37,9 +37,9 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - FireFly Screen
   - Platform
-  - ParticleSystemLight
+  - ParticlesBloom
   m_SortingLayers:
   - name: Default
     uniqueID: 0
@@ -52,4 +52,7 @@ TagManager:
     locked: 0
   - name: ParticleEffectLight
     uniqueID: 3259115941
+    locked: 0
+  - name: FireFly
+    uniqueID: 2357286075
     locked: 0
