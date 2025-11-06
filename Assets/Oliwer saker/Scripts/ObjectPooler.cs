@@ -33,6 +33,7 @@ public class ObjectPooler : MonoBehaviour
     {
         poolDictionary = new Dictionary<string, Queue<GameObject>>();
 
+
         foreach (Pool pool in pools)
         {
             Queue<GameObject> objectpool = new Queue<GameObject>();
