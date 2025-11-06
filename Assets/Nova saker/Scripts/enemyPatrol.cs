@@ -24,26 +24,32 @@ public class enemyPatrol : MonoBehaviour
     {
         Vector2 point = currentPoint.position - transform.position;// ger vilke direction enemyn vill gå vilket är mot currentPoint
 
-        if(currentPoint == PointB.transform)
+        
+
+        if (currentPoint == PointB.transform)
         {
             rb.velocity = new Vector2(speed, 0);// om punkten är punkt B gå mot punkte A
         }
-        else
+        else if (currentPoint == PointA.transform)
         {
-            rb.velocity = new Vector2(-speed, 0);// om punkten inte är punkt B gå mot andra hållet
+            rb.velocity = new Vector2(-speed, 0);// om punkten är punkt A gå mot punkte B
         }
+        
 
-        if(Vector2.Distance(transform.position, currentPoint.position) < 4f && currentPoint == PointB.transform)//om enmyn har nått currentpoint och den är B ska currnet point sättas till punktA
+        
+
+        if (Vector2.Distance(transform.position, currentPoint.position) < 4f && currentPoint == PointA.transform)//om enmyn har nått currentpoint och den är B ska currnet point sättas till punktA
         {
-            print("byt till a");
-            flip();
-            currentPoint = PointA.transform;
-        }
-        else if (Vector2.Distance(transform.position, currentPoint.position) < 4f && currentPoint == PointA.transform)//om enmyn har nått currentpoint och den är A ska currnet point sättas till punktB
-        {
-            print("byt till b");
+            print("byt till B");
             flip();
             currentPoint = PointB.transform;
+        }
+        
+        else if (Vector2.Distance(transform.position, currentPoint.position) < 4f && currentPoint == PointB.transform)//om enmyn har nått currentpoint och den är B ska currnet point sättas till punktA
+        {
+            print("byt till A");
+            flip();
+            currentPoint = PointA.transform;
         }
     }
     private void flip() 
