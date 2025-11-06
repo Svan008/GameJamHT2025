@@ -4,22 +4,25 @@ using UnityEngine;
 
 public class Parallax : MonoBehaviour
 {
-    private float length, startpos;
-    public GameObject cam;
-    public float parallaxeffect;
+    private float length, startpos; // length finns
+    public GameObject cam; //kamera finns
+    public float parallaxEffect; // parallax effekt finns
 
-    private void Start()
+    void Start() // När spelet startar
     {
-        startpos = transform.position.x;
-        length = GetComponent<SpriteRenderer>().bounds.size.x;
+        startpos = transform.position.x; //kamerans startposition
+        length = GetComponent<SpriteRenderer>().bounds.size.x; // längd på hur långt bilderna renderas
     }
 
-    private void FixedUpdate()
+    void Update()
     {
-        float dist = (cam.transform.position.x * parallaxeffect);
+        float temp = (cam.transform.position.x * (1 - parallaxEffect));  // 
+        float dist = (cam.transform.position.x * parallaxEffect); //
 
-        transform.position = new Vector3(startpos + dist, transform.position.y, transform.position.z);
+        transform.position = new Vector3(startpos + dist, transform.position.y, transform.position.z); //
+
+        if (temp > startpos + length) startpos += length; //
+        else if (temp < startpos - length) startpos -= length; // 
     }
-    // Start is called before the first frame update
-
 }
+// Sagas
