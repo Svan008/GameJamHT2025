@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEditor;
 using UnityEngine;
 
@@ -15,14 +16,28 @@ public class playerDamage : MonoBehaviour
     public int damageToGive = 10;
     public int HurtPlayer;
 
-
-
+    private SpriteRenderer spriteRenderer;
+   
 
     private void Start()
     {
+        ResetHealth();
+
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        GameController
         {
             currentHealth = maxHealth; //max hälsa är nuvarande hälsa
             healthBar.SetMaxHealth(maxHealth);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Trap trap = collision.GetComponent<Trap>();
+        if (trap && trap.damage>0)
+        {
+            TakeDamage(trap.damage);
+
         }
     }
 
@@ -42,6 +57,7 @@ public class playerDamage : MonoBehaviour
 
             healthBar.SetHealth(currentHealth);
         }
-    }
-}
+
+
+ }    }
 //Saga
