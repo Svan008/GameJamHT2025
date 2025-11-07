@@ -28,11 +28,6 @@ public class playerDamage : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Y))//om vi trycker på "Y"
-        {
-            PlayerTakeDamage(10); // Tar player 10 damage
-            Debug.Log(GameManager.gameManager._playerHealth.Health);
-        }
 
         if (Input.GetKeyDown(KeyCode.U))
         {
@@ -48,6 +43,15 @@ public class playerDamage : MonoBehaviour
     private void PlayerHeal(int healing)
     {
         GameManager.gameManager._playerHealth.HealUnit(healing);
+    }
+    
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.CompareTag("Boss"))
+        {
+            PlayerTakeDamage(-10); // Tar player 10 damage
+            Debug.Log(GameManager.gameManager._playerHealth.Health);
+        }
     }
 }
 //Saga
