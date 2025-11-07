@@ -8,6 +8,7 @@ TagManager:
   - Movement
   - Menu Panel
   - Trap
+  - Boss
   layers:
   - Default
   - TransparentFX
