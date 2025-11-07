@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class ActivateTextAfterTime : MonoBehaviour
 {
-    [Header("Settings")]
+    //settings
     [SerializeField] private float requiredTime = 3f; // seconds player must stay
     [SerializeField] private GameObject textToActivate; // Text2
     [SerializeField] private string playerTag = "Player";
@@ -43,3 +43,5 @@ public class ActivateTextAfterTime : MonoBehaviour
         }
     }
 }
+
+//Oliwer

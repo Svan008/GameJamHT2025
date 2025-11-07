@@ -90,3 +90,5 @@ public class BossPath : MonoBehaviour
         // gör punkterna tydligare
     }
 }
+
+//Oliwer

@@ -44,7 +44,8 @@ public class playerDamage : MonoBehaviour
     {
         GameManager.gameManager._playerHealth.HealUnit(healing);
     }
-    
+
+    #region Oliwer har skrivit inanför denna region
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.CompareTag("Boss"))
@@ -53,5 +54,6 @@ public class playerDamage : MonoBehaviour
             Debug.Log(GameManager.gameManager._playerHealth.Health);
         }
     }
+    #endregion
 }
 //Saga
