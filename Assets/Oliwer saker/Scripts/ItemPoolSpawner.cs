@@ -16,3 +16,5 @@ public class ItemPoolSpawner : MonoBehaviour
         objectPooler.SpawnFromPool("Cube", transform.position, Quaternion.identity);
     }
 }
+
+//Oliwer
