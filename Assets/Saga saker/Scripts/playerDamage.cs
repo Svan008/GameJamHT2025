@@ -21,10 +21,10 @@ public class playerDamage : MonoBehaviour
 
     private void Start()
     {
-        ResetHealth();
+        //ResetHealth();
 
         spriteRenderer = GetComponent<SpriteRenderer>();
-        GameController
+        //GameController
         {
             currentHealth = maxHealth; //max hälsa är nuvarande hälsa
             healthBar.SetMaxHealth(maxHealth);
@@ -33,31 +33,36 @@ public class playerDamage : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Trap trap = collision.GetComponent<Trap>();
-        if (trap && trap.damage>0)
-        {
-            TakeDamage(trap.damage);
+        //Trap trap = collision.GetComponent<Trap>();
+        //if (trap && trap.damage>0)
+        //
+        //    TakeDamage(trap.damage);
 
-        }
+        //}
     }
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Y))//om vi trycker på "Y"
         {
-            TakeDamage(10); // Tar player 10 damage
-            Debug.Log("Halko");
+            PlayerTakeDamage(10); // Tar player 10 damage
+            Debug.Log(GameManager.gameManager._playerHealth.Health);
         }
 
-
-
-        void TakeDamage(int damage) //damage
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            currentHealth -= damage; // slidern visar nuvarande hälsa minus mängd damage
-
-            healthBar.SetHealth(currentHealth);
+            PlayerHeal(10);
+            Debug.Log(GameManager.gameManager._playerHealth.Health);
         }
+    }
 
-
- }    }
+    private void PlayerTakeDamage(int dmg)
+    {
+        GameManager.gameManager._playerHealth.DmgUnit(dmg);
+    }
+    private void PlayerHeal(int healing)
+    {
+        GameManager.gameManager._playerHealth.HealUnit(healing);
+    }
+}
 //Saga
