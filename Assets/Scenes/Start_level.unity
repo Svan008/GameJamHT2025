@@ -9951,6 +9951,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Text "Jumping Controls"
       objectReference: {fileID: 0}
+    - target: {fileID: 631252001426338386, guid: 3e7c70d1b14cb69459d76db6e777d0b4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 631252001426338387, guid: 3e7c70d1b14cb69459d76db6e777d0b4, type: 3}
       propertyPath: m_Text
       value: Try pressing the "SPACEBAR" to jump
