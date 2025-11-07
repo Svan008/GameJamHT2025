@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class enemyPatrol : MonoBehaviour
+public class enemyPatrol : MonoBehaviour// nova
 {
     public GameObject PointA;
     public GameObject PointB;//referar till båda punkterna i unity
@@ -38,14 +38,14 @@ public class enemyPatrol : MonoBehaviour
 
         
 
-        if (Vector2.Distance(transform.position, currentPoint.position) < 4f && currentPoint == PointA.transform)//om enmyn har nått currentpoint och den är B ska currnet point sättas till punktA
+        if (Vector2.Distance(transform.position, currentPoint.position) < 4f && currentPoint == PointA.transform)//om enmyn har nått currentpoint och den är B ska currnet point sättas till punktA 
         {
             print("byt till B");
             flip();
             currentPoint = PointB.transform;
         }
         
-        else if (Vector2.Distance(transform.position, currentPoint.position) < 4f && currentPoint == PointB.transform)//om enmyn har nått currentpoint och den är B ska currnet point sättas till punktA
+        else if (Vector2.Distance(transform.position, currentPoint.position) < 4f && currentPoint == PointB.transform)//om enmyn har nått currentpoint och den är B ska currnet point sättas till punktA 
         {
             print("byt till A");
             flip();
@@ -56,7 +56,7 @@ public class enemyPatrol : MonoBehaviour
     {
         Vector3 localscale = transform.localScale;
         localscale.x *= -1;
-        transform.localScale = localscale; // gör så den flipar
+        transform.localScale = localscale; // gör så den flipar 
     }
 
 
@@ -65,6 +65,7 @@ public class enemyPatrol : MonoBehaviour
         Gizmos.DrawWireSphere(PointA.transform.position, 0.5f);
         Gizmos.DrawWireSphere(PointB.transform.position, 0.5f);
         Gizmos.DrawLine(PointA.transform.position, PointB.transform.position);
-        // gör punkterna tydligare
+        // gör punkterna tydligare 
+
     }
 }
