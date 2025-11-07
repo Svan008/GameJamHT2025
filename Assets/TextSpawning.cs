@@ -1,12 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class TextSpawning : MonoBehaviour
 {
-    [SerializeField] float elapsedTime;
-    bool shouldTimer = false;
-    Animator anim;
+    [SerializeField] private float elapsedTime = 0f;
+    private bool timerStarted = false;
+    private Animator anim;
 
     private void Start()
     {
@@ -15,29 +13,30 @@ public class TextSpawning : MonoBehaviour
 
     private void Update()
     {
-        if (shouldTimer)
+        // Start counting if timer started
+        if (timerStarted)
         {
-
             elapsedTime += Time.deltaTime;
+
+            // Optional: trigger animation after 4 seconds
+            if (elapsedTime >= 4f)
+            {
+                anim.SetBool("StartPlaying", true);
+            }
+        }
+
+        // If Space is pressed → destroy text
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Destroy(gameObject);
         }
     }
-
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            shouldTimer = true;
-        }
-    }
-
-
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        if (elapsedTime >= 4 && collision.CompareTag("Player"))
-        {
-            print("<3");
-            anim.SetBool("StartPlaying", true);
+            timerStarted = true;
         }
     }
 }
