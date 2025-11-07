@@ -16,7 +16,7 @@ public class UIManager : MonoBehaviour
     }
     void Update()
     {
-        UnitHealth maxHealth = MaxHealth;
-        UnitHealth _playerHealth = healthManager.currentHealth;
+        healthBar.maxValue = healthManager.maxHealth;
+        healthBar.value = healthManager.currentHealth;
     }
 }
