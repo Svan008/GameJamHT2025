@@ -24,7 +24,7 @@ public class textAnimation : MonoBehaviour
         if (elapsedTime >= 5.3)
         {
             print("TextAnimChange");
-           // anim.SetBool("animarionPlayed", true);
+           
             
         }
         
