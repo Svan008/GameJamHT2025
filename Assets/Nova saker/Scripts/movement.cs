@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class movement : MonoBehaviour
+public class movement : MonoBehaviour//Nova skrivit allt
 {
     public float moveSpeed = 5f; // Hur snabbt vår karaktär får röra sig
     public float jumpForce = 5f; // Vilken force hopp knappen kan göra
@@ -20,16 +20,28 @@ public class movement : MonoBehaviour
 
     private bool canDash = true;
     public bool isDashing;
-    [SerializeField, Range(20,40)] private float dashingPower = 12f; // Dash power
-    [SerializeField, Range(0,4)] private float dashingTime = 1f; // Dash duration
-    [SerializeField, Range(0,4)] private float dashingCooldown = 1f; // Cooldown between dashes
+    [SerializeField, Range(20, 40)] private float dashingPower = 12f; // Dash power
+    [SerializeField, Range(0, 4)] private float dashingTime = 1f; // Dash duration
+    [SerializeField, Range(0, 4)] private float dashingCooldown = 1f; // Cooldown between dashes
 
     public Animator anim;
-    
+
 
     private bool isFacingRight = true; // Kolla vilket håll karaktären tittar i
 
-    
+    [HideInInspector] public bool ledgeDetected;
+
+    [Header("Ledge info")]
+    [SerializeField] private Vector2 offset1;// position innan man klättrar
+    [SerializeField] private Vector2 offset2;// position efter man klättrar
+
+    private Vector2 climbBegunPosition;
+    private Vector2 climbOverPosition;
+
+    private bool canClimb;
+    private bool canGrabLedge = true;
+
+
 
 
     // Start is called before the first frame update
@@ -38,7 +50,7 @@ public class movement : MonoBehaviour
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>(); // Hämta vår Rigidbody 2D
         extraJump = extraJumpValue; // de är samma 
-       
+
 
     }
 
@@ -46,8 +58,8 @@ public class movement : MonoBehaviour
     void Update()
     {
 
-        
-
+        CheckForLedge();
+        CheckCollison();
 
         // Adjust speed if Left Shift is held for sprinting
         IsGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer); // Kolla om spelaren är på marken
@@ -75,7 +87,8 @@ public class movement : MonoBehaviour
         float moveDirection = Input.GetAxis("Horizontal");  // Kolla om vi rör oss horisontellt
         anim.SetBool("Jump", !IsGrounded);
 
-       
+        anim.SetBool("canClimb", canClimb);
+
         Move(moveDirection); // Flytta spelaren
         if (moveDirection > 0 && !isFacingRight)
         {
@@ -91,8 +104,45 @@ public class movement : MonoBehaviour
         {
 
         }
-        
+
     }
+
+    private void CheckForLedge()
+    {
+        if (ledgeDetected && canGrabLedge)
+        {
+            canGrabLedge = false;// så man inte kan klättra två gånger på rad
+
+            Vector2 ledgePosition = GetComponentInChildren<LedgeDetection>().transform.position;
+            climbBegunPosition = ledgePosition + offset1;
+            climbOverPosition = ledgePosition + offset2;
+            //så animationen matchar med ledgeen 
+
+            canClimb = true;
+        }
+
+        if (canClimb)
+          transform.position = climbBegunPosition;
+        
+
+
+    }
+
+    private void ledgeClimbOver()
+    {
+        canClimb = false;
+        transform.position = climbOverPosition;
+        canGrabLedge = true;
+        // positionen efter climben
+        Invoke("AllowLedgeGrab", .1f);
+    }
+
+    private void AllowLedgeGrab() => canGrabLedge = true;
+    
+
+    
+
+
     private void Move(float direction)
     {
         if (isDashing) return; // Ignore movement if dashing
@@ -149,5 +199,9 @@ public class movement : MonoBehaviour
         // Wait for cooldown before allowing next dash
         yield return new WaitForSeconds(dashingCooldown);
         canDash = true;
+    }
+    private void CheckCollison()
+    {
+        Debug.Log(ledgeDetected);
     }
 }
