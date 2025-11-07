@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
+    public UnitHealth maxHealth;
+    public UnitHealth Health;
+    public UnitHealth _playerHealth;
     private playerDamage healthManager;
     public Slider healthBar;
     void Start()
