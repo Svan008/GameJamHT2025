@@ -193,7 +193,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 9d69ee4b6664ed84983144d9fd812fb2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5053,7 +5053,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f9be9679d963b1498d4d722a5d2f5a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 0}
+  cam: {fileID: 1174862812}
   parallaxEffect: 0
 --- !u!212 &95712410
 SpriteRenderer:
@@ -6965,6 +6965,7 @@ GameObject:
   m_Component:
   - component: {fileID: 251467050}
   - component: {fileID: 251467051}
+  - component: {fileID: 251467052}
   m_Layer: 0
   m_Name: grott_bakrund_4 (1)
   m_TagString: Untagged
@@ -7037,6 +7038,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &251467052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 251467049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f9be9679d963b1498d4d722a5d2f5a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 0}
+  parallaxEffect: 0.07
 --- !u!1 &255947615
 GameObject:
   m_ObjectHideFlags: 0
@@ -7122,7 +7137,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 9d69ee4b6664ed84983144d9fd812fb2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -7144,6 +7159,7 @@ GameObject:
   m_Component:
   - component: {fileID: 342147496}
   - component: {fileID: 342147497}
+  - component: {fileID: 342147498}
   m_Layer: 0
   m_Name: grott_bakrund_4 (1)
   m_TagString: Untagged
@@ -7216,6 +7232,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &342147498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 342147495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f9be9679d963b1498d4d722a5d2f5a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 0}
+  parallaxEffect: 0.07
 --- !u!1 &343274305
 GameObject:
   m_ObjectHideFlags: 0
@@ -7242,7 +7272,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 343274305}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.420965, y: -2.058275, z: 17.969408}
+  m_LocalPosition: {x: -9.420965, y: -2.058275, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 255947616}
@@ -7265,8 +7295,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f9be9679d963b1498d4d722a5d2f5a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 0}
-  parallaxEffect: 0
+  cam: {fileID: 1174862812}
+  parallaxEffect: 0.1
 --- !u!212 &343274308
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7328,6 +7358,7 @@ GameObject:
   m_Component:
   - component: {fileID: 364654418}
   - component: {fileID: 364654419}
+  - component: {fileID: 364654420}
   m_Layer: 0
   m_Name: grott_bakrund_4 (2)
   m_TagString: Untagged
@@ -7400,6 +7431,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &364654420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 364654417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f9be9679d963b1498d4d722a5d2f5a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 0}
+  parallaxEffect: 0.07
 --- !u!1 &397962434
 GameObject:
   m_ObjectHideFlags: 0
@@ -12209,6 +12254,7 @@ GameObject:
   m_Component:
   - component: {fileID: 435900747}
   - component: {fileID: 435900748}
+  - component: {fileID: 435900749}
   m_Layer: 0
   m_Name: grott_bakrund_2 (1)
   m_TagString: Untagged
@@ -12281,6 +12327,77 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &435900749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 435900746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f9be9679d963b1498d4d722a5d2f5a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 1174862812}
+  parallaxEffect: 0
+--- !u!1001 &544433371
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7399221910688387841, guid: 424ae772487bced40b49b6b3b87ab525, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7399221910688387841, guid: 424ae772487bced40b49b6b3b87ab525, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 7399221910688387841, guid: 424ae772487bced40b49b6b3b87ab525, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 7399221910688387841, guid: 424ae772487bced40b49b6b3b87ab525, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7399221910688387841, guid: 424ae772487bced40b49b6b3b87ab525, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7399221910688387841, guid: 424ae772487bced40b49b6b3b87ab525, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7399221910688387841, guid: 424ae772487bced40b49b6b3b87ab525, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7399221910688387841, guid: 424ae772487bced40b49b6b3b87ab525, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7399221910688387841, guid: 424ae772487bced40b49b6b3b87ab525, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7399221910688387841, guid: 424ae772487bced40b49b6b3b87ab525, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7399221910688387841, guid: 424ae772487bced40b49b6b3b87ab525, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7399221910688387842, guid: 424ae772487bced40b49b6b3b87ab525, type: 3}
+      propertyPath: m_Name
+      value: Jumppad
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 424ae772487bced40b49b6b3b87ab525, type: 3}
 --- !u!1 &559049026
 GameObject:
   m_ObjectHideFlags: 0
@@ -12291,6 +12408,7 @@ GameObject:
   m_Component:
   - component: {fileID: 559049027}
   - component: {fileID: 559049028}
+  - component: {fileID: 559049029}
   m_Layer: 0
   m_Name: grott_bakrund_3 (2)
   m_TagString: Untagged
@@ -12306,7 +12424,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 559049026}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 38.360966, y: 0, z: 0}
+  m_LocalPosition: {x: 38.360966, y: 0, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1077491434}
@@ -12363,6 +12481,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &559049029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 559049026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f9be9679d963b1498d4d722a5d2f5a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 1174862812}
+  parallaxEffect: 0.05
 --- !u!1 &638970352
 GameObject:
   m_ObjectHideFlags: 0
@@ -12374,6 +12506,7 @@ GameObject:
   - component: {fileID: 638970353}
   - component: {fileID: 638970355}
   - component: {fileID: 638970354}
+  - component: {fileID: 638970356}
   m_Layer: 0
   m_Name: grott_bakrund_4 (1)
   m_TagString: Untagged
@@ -12408,7 +12541,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 0}
-  parallaxEffect: 0
+  parallaxEffect: 0.07
 --- !u!212 &638970355
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12460,6 +12593,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &638970356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 638970352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f9be9679d963b1498d4d722a5d2f5a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 0}
+  parallaxEffect: 0
 --- !u!1 &867387986
 GameObject:
   m_ObjectHideFlags: 0
@@ -12557,6 +12704,7 @@ GameObject:
   m_Component:
   - component: {fileID: 913392045}
   - component: {fileID: 913392046}
+  - component: {fileID: 913392047}
   m_Layer: 0
   m_Name: grott_bakrund_3 (1)
   m_TagString: Untagged
@@ -12572,7 +12720,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 913392044}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 19.170965, y: 0, z: 0}
+  m_LocalPosition: {x: 19.170965, y: 0, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1077491434}
@@ -12629,6 +12777,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &913392047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 913392044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f9be9679d963b1498d4d722a5d2f5a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 1174862812}
+  parallaxEffect: 0.05
 --- !u!1 &982370330
 GameObject:
   m_ObjectHideFlags: 0
@@ -12655,7 +12817,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 982370330}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.420965, y: -2.058275, z: 18.969408}
+  m_LocalPosition: {x: -9.420965, y: -2.058275, z: 20}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 251467050}
@@ -12678,8 +12840,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f9be9679d963b1498d4d722a5d2f5a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 0}
-  parallaxEffect: 0
+  cam: {fileID: 1174862812}
+  parallaxEffect: 0.07
 --- !u!212 &982370333
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12741,6 +12903,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1002482575}
   - component: {fileID: 1002482576}
+  - component: {fileID: 1002482577}
   m_Layer: 0
   m_Name: grott_bakrund_2 (1)
   m_TagString: Untagged
@@ -12813,6 +12976,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1002482577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1002482574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f9be9679d963b1498d4d722a5d2f5a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 1174862812}
+  parallaxEffect: 0
 --- !u!1001 &1009403925
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12822,11 +12999,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 855004078150721489, guid: 0941d20faa29c234f8dc51e87afa6e7c, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 855004078150721489, guid: 0941d20faa29c234f8dc51e87afa6e7c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.16
+      value: -1.95
       objectReference: {fileID: 0}
     - target: {fileID: 855004078150721489, guid: 0941d20faa29c234f8dc51e87afa6e7c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -12868,6 +13045,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 855004078150721493, guid: 0941d20faa29c234f8dc51e87afa6e7c, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 855004078150721502, guid: 0941d20faa29c234f8dc51e87afa6e7c, type: 3}
+      propertyPath: dashingTime
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 855004078150721502, guid: 0941d20faa29c234f8dc51e87afa6e7c, type: 3}
+      propertyPath: dashingPower
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0941d20faa29c234f8dc51e87afa6e7c, type: 3}
 --- !u!1 &1059777270
@@ -12880,6 +13069,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1059777271}
   - component: {fileID: 1059777272}
+  - component: {fileID: 1059777273}
   m_Layer: 0
   m_Name: grott_bakrund_3 (1)
   m_TagString: Untagged
@@ -12895,7 +13085,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1059777270}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 76.68193, y: 0, z: 0}
+  m_LocalPosition: {x: 76.68193, y: 0, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1077491434}
@@ -12952,6 +13142,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1059777273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1059777270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f9be9679d963b1498d4d722a5d2f5a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 1174862812}
+  parallaxEffect: 0.05
 --- !u!1 &1077491433
 GameObject:
   m_ObjectHideFlags: 0
@@ -12978,7 +13182,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1077491433}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.420965, y: -2.058275, z: 19.969408}
+  m_LocalPosition: {x: -9.420965, y: -2.058275, z: 30}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 913392045}
@@ -13001,8 +13205,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f9be9679d963b1498d4d722a5d2f5a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 0}
-  parallaxEffect: 0
+  cam: {fileID: 1174862812}
+  parallaxEffect: 0.05
 --- !u!212 &1077491436
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13064,6 +13268,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1092500380}
   - component: {fileID: 1092500381}
+  - component: {fileID: 1092500382}
   m_Layer: 0
   m_Name: grott_bakrund_2 (2)
   m_TagString: Untagged
@@ -13136,6 +13341,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1092500382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1092500379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f9be9679d963b1498d4d722a5d2f5a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 1174862812}
+  parallaxEffect: 0
 --- !u!1 &1152642234
 GameObject:
   m_ObjectHideFlags: 0
@@ -13206,7 +13425,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 9d69ee4b6664ed84983144d9fd812fb2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -13218,6 +13437,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1174862812 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5887302208346613164, guid: 6f3b2a7a9de3d46449ac5bad288d5b8e, type: 3}
+  m_PrefabInstance: {fileID: 1180960542}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1180960542
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13227,11 +13451,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5887302208346613072, guid: 6f3b2a7a9de3d46449ac5bad288d5b8e, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5887302208346613072, guid: 6f3b2a7a9de3d46449ac5bad288d5b8e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.09
+      value: -1.96
       objectReference: {fileID: 0}
     - target: {fileID: 5887302208346613072, guid: 6f3b2a7a9de3d46449ac5bad288d5b8e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -13247,7 +13471,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5887302208346613072, guid: 6f3b2a7a9de3d46449ac5bad288d5b8e, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5887302208346613072, guid: 6f3b2a7a9de3d46449ac5bad288d5b8e, type: 3}
       propertyPath: m_LocalRotation.y
@@ -13255,7 +13479,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5887302208346613072, guid: 6f3b2a7a9de3d46449ac5bad288d5b8e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5887302208346613072, guid: 6f3b2a7a9de3d46449ac5bad288d5b8e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -13289,6 +13513,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1187927500}
   - component: {fileID: 1187927501}
+  - component: {fileID: 1187927502}
   m_Layer: 0
   m_Name: grott_bakrund_4 (2)
   m_TagString: Untagged
@@ -13361,6 +13586,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1187927502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1187927499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f9be9679d963b1498d4d722a5d2f5a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 0}
+  parallaxEffect: 0.07
 --- !u!1 &1249656910
 GameObject:
   m_ObjectHideFlags: 0
@@ -13394,7 +13633,7 @@ Transform:
   - {fileID: 982370331}
   - {fileID: 343274306}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1375197271
 GameObject:
@@ -13407,6 +13646,7 @@ GameObject:
   - component: {fileID: 1375197272}
   - component: {fileID: 1375197274}
   - component: {fileID: 1375197273}
+  - component: {fileID: 1375197275}
   m_Layer: 0
   m_Name: grott_bakrund_3 (1)
   m_TagString: Untagged
@@ -13422,7 +13662,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1375197271}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 57.510963, y: 0, z: 0}
+  m_LocalPosition: {x: 57.510963, y: 0, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1077491434}
@@ -13440,8 +13680,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f9be9679d963b1498d4d722a5d2f5a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 0}
-  parallaxEffect: 0
+  cam: {fileID: 1174862812}
+  parallaxEffect: 0.05
 --- !u!212 &1375197274
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13493,6 +13733,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1375197275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1375197271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f9be9679d963b1498d4d722a5d2f5a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 0}
+  parallaxEffect: 0
 --- !u!1 &1478652788
 GameObject:
   m_ObjectHideFlags: 0
@@ -13503,6 +13757,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1478652789}
   - component: {fileID: 1478652790}
+  - component: {fileID: 1478652791}
   m_Layer: 0
   m_Name: grott_bakrund_3 (2)
   m_TagString: Untagged
@@ -13518,7 +13773,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1478652788}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 95.871925, y: 0, z: 0}
+  m_LocalPosition: {x: 95.871925, y: 0, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1077491434}
@@ -13575,6 +13830,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1478652791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1478652788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f9be9679d963b1498d4d722a5d2f5a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 1174862812}
+  parallaxEffect: 0.05
 --- !u!1 &1480266811
 GameObject:
   m_ObjectHideFlags: 0
@@ -13586,6 +13855,7 @@ GameObject:
   - component: {fileID: 1480266812}
   - component: {fileID: 1480266814}
   - component: {fileID: 1480266813}
+  - component: {fileID: 1480266815}
   m_Layer: 0
   m_Name: grott_bakrund_2 (1)
   m_TagString: Untagged
@@ -13619,7 +13889,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f9be9679d963b1498d4d722a5d2f5a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 0}
+  cam: {fileID: 1174862812}
   parallaxEffect: 0
 --- !u!212 &1480266814
 SpriteRenderer:
@@ -13672,6 +13942,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1480266815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1480266811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f9be9679d963b1498d4d722a5d2f5a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 0}
+  parallaxEffect: 0
 --- !u!1 &1525694678
 GameObject:
   m_ObjectHideFlags: 0
@@ -13682,6 +13966,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1525694679}
   - component: {fileID: 1525694680}
+  - component: {fileID: 1525694681}
   m_Layer: 0
   m_Name: grott_bakrund_2 (2)
   m_TagString: Untagged
@@ -13754,6 +14039,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1525694681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525694678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f9be9679d963b1498d4d722a5d2f5a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 1174862812}
+  parallaxEffect: 0
 --- !u!1 &1621924006
 GameObject:
   m_ObjectHideFlags: 0
@@ -13796,7 +14095,7 @@ Transform:
   m_Children:
   - {fileID: 156552279}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1694752202
 GameObject:
@@ -13868,7 +14167,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 9d69ee4b6664ed84983144d9fd812fb2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -18708,7 +19007,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4505044787959403228, guid: 6f4b740a5bf193a4084dd2bfbd815e2f, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4505044787959403228, guid: 6f4b740a5bf193a4084dd2bfbd815e2f, type: 3}
       propertyPath: m_AnchorMax.x
@@ -18854,7 +19153,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 9d69ee4b6664ed84983144d9fd812fb2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -18897,7 +19196,7 @@ Transform:
   - {fileID: 397962437}
   - {fileID: 1759136504}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1964516830
 GameObject:
@@ -18969,5 +19268,5 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

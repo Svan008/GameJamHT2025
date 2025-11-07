@@ -35,7 +35,7 @@ public class SpellStuff : MonoBehaviour
                 }
                 magic = Instantiate(Resources.Load("Prefabs/Missile_"), transform.position, transform.rotation) as GameObject;
                 magic.transform.SetParent(gameObject.transform);
-                magic.transform.localPosition = new Vector3(0f, 0f, 0f);
+                magic.transform.localPosition = new Vector3(0.177f, -0.261f, 0f);
                 magic.GetComponent<Renderer>().sortingOrder = gameObject.GetComponent<Renderer>().sortingOrder + 1;
                 magic.transform.localScale = Vector3.one;
                 whichMagicSelected += 1;
