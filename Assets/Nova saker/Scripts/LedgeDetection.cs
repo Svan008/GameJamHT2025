@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LedgeDetection : MonoBehaviour
+public class LedgeDetection : MonoBehaviour // nova allt
 {
     [SerializeField] private float radius;
     [SerializeField] private LayerMask whatIsGround;

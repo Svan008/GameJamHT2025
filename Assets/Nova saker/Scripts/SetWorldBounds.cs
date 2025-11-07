@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SetWorldBounds : MonoBehaviour
+public class SetWorldBounds : MonoBehaviour//nova allt
 {
     private void Awake()
     {
