@@ -85,7 +85,10 @@ public class BossPath : MonoBehaviour
         Gizmos.DrawWireSphere(PointA.transform.position, 0.5f);
         Gizmos.DrawWireSphere(PointB.transform.position, 0.5f);
         Gizmos.DrawWireSphere(PointC.transform.position, 0.5f);
+        Gizmos.DrawWireSphere(PointD.transform.position, 0.5f);
         Gizmos.DrawLine(PointA.transform.position, PointB.transform.position);
         // gör punkterna tydligare
     }
 }
+
+//Oliwer

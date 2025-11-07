@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
+    public UnitHealth MaxHealth;
+    public UnitHealth Health;
+    public UnitHealth _playerHealth;
     private playerDamage healthManager;
     public Slider healthBar;
     void Start()
@@ -13,7 +16,7 @@ public class UIManager : MonoBehaviour
     }
     void Update()
     {
-        healthBar.maxValue = healthManager.maxHealth;
-        healthBar.value = healthManager.currentHealth;
+        UnitHealth maxHealth = MaxHealth;
+        UnitHealth _playerHealth = healthManager.currentHealth;
     }
 }
